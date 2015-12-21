@@ -1,0 +1,80 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="9059" systemVersion="14F1021" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES">
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="9049"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner" customClass="TuiChuController">
+            <connections>
+                <outlet property="loginButton" destination="Lz7-LY-NWI" id="bc7-Z6-dLw"/>
+                <outlet property="view" destination="i5M-Pr-FkT" id="sfx-zR-JGt"/>
+                <outlet property="zhuCeButton" destination="V46-vr-sHv" id="cpN-Dk-MYt"/>
+            </connections>
+        </placeholder>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <view clearsContextBeforeDrawing="NO" contentMode="scaleToFill" id="i5M-Pr-FkT">
+            <rect key="frame" x="0.0" y="0.0" width="600" height="600"/>
+            <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+            <subviews>
+                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="您尚未登录，请您登陆后进行操作" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="fI1-wo-76U">
+                    <rect key="frame" x="158" y="180" width="285" height="23"/>
+                    <constraints>
+                        <constraint firstAttribute="width" constant="285" id="oOk-vS-VIG"/>
+                        <constraint firstAttribute="height" constant="23" id="psa-9U-tEn"/>
+                    </constraints>
+                    <fontDescription key="fontDescription" type="system" pointSize="16"/>
+                    <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
+                    <nil key="highlightedColor"/>
+                </label>
+                <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Lz7-LY-NWI">
+                    <rect key="frame" x="20" y="264" width="560" height="44"/>
+                    <color key="backgroundColor" red="0.20784315466880798" green="0.77647066116333008" blue="0.67843139171600342" alpha="1" colorSpace="deviceRGB"/>
+                    <constraints>
+                        <constraint firstAttribute="height" constant="44" id="ugE-cV-LMJ"/>
+                    </constraints>
+                    <state key="normal" title="登陆">
+                        <color key="titleColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                    </state>
+                    <connections>
+                        <action selector="loginButton:" destination="-1" eventType="touchUpInside" id="O38-52-KdW"/>
+                    </connections>
+                </button>
+                <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="V46-vr-sHv">
+                    <rect key="frame" x="20" y="328" width="560" height="44"/>
+                    <color key="backgroundColor" red="0.93333339691162109" green="0.93333339691162109" blue="0.93333339691162109" alpha="1" colorSpace="deviceRGB"/>
+                    <constraints>
+                        <constraint firstAttribute="height" constant="44" id="ksY-MN-55j"/>
+                    </constraints>
+                    <state key="normal" title="注册">
+                        <color key="titleColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                    </state>
+                    <connections>
+                        <action selector="registerButton:" destination="-1" eventType="touchUpInside" id="d4V-9j-pMn"/>
+                    </connections>
+                </button>
+            </subviews>
+            <color key="backgroundColor" red="0.93333339691162109" green="0.93333339691162109" blue="0.93333339691162109" alpha="1" colorSpace="deviceRGB"/>
+            <constraints>
+                <constraint firstAttribute="trailing" secondItem="V46-vr-sHv" secondAttribute="trailing" constant="20" id="1Ah-SV-Rkv"/>
+                <constraint firstItem="V46-vr-sHv" firstAttribute="centerY" secondItem="i5M-Pr-FkT" secondAttribute="centerY" constant="20" id="6mE-Rt-PV8"/>
+                <constraint firstItem="Lz7-LY-NWI" firstAttribute="centerY" secondItem="i5M-Pr-FkT" secondAttribute="centerY" id="8iz-DR-wIJ"/>
+                <constraint firstAttribute="trailing" secondItem="Lz7-LY-NWI" secondAttribute="trailing" constant="20" id="AYX-ig-wtD"/>
+                <constraint firstItem="Lz7-LY-NWI" firstAttribute="leading" secondItem="i5M-Pr-FkT" secondAttribute="leading" constant="20" id="H2T-xr-rLt"/>
+                <constraint firstItem="V46-vr-sHv" firstAttribute="centerX" secondItem="i5M-Pr-FkT" secondAttribute="centerX" id="IzM-jS-KDc"/>
+                <constraint firstItem="V46-vr-sHv" firstAttribute="leading" secondItem="i5M-Pr-FkT" secondAttribute="leading" constant="20" id="Oga-hB-04C"/>
+                <constraint firstItem="Lz7-LY-NWI" firstAttribute="top" secondItem="fI1-wo-76U" secondAttribute="bottom" constant="61" id="Ral-BH-WxG"/>
+                <constraint firstItem="V46-vr-sHv" firstAttribute="top" secondItem="Lz7-LY-NWI" secondAttribute="bottom" constant="20" id="cvr-1T-cps"/>
+                <constraint firstItem="fI1-wo-76U" firstAttribute="centerX" secondItem="Lz7-LY-NWI" secondAttribute="centerX" id="ffo-qL-lsy"/>
+                <constraint firstItem="V46-vr-sHv" firstAttribute="centerY" secondItem="i5M-Pr-FkT" secondAttribute="centerY" constant="50" id="lW0-iZ-AVo"/>
+                <constraint firstItem="Lz7-LY-NWI" firstAttribute="centerX" secondItem="i5M-Pr-FkT" secondAttribute="centerX" id="wNz-aC-Mta"/>
+            </constraints>
+            <variation key="default">
+                <mask key="constraints">
+                    <exclude reference="8iz-DR-wIJ"/>
+                    <exclude reference="6mE-Rt-PV8"/>
+                </mask>
+            </variation>
+        </view>
+    </objects>
+</document>

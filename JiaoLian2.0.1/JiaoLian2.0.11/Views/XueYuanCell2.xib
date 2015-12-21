@@ -1,0 +1,105 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="9059" systemVersion="14F1021" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES">
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="9049"/>
+        <capability name="Aspect ratio constraints" minToolsVersion="5.1"/>
+        <capability name="Constraints to layout margins" minToolsVersion="6.0"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner"/>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <tableViewCell contentMode="scaleToFill" selectionStyle="default" indentationWidth="10" reuseIdentifier="XueYuanCell2" id="KGk-i7-Jjw" customClass="XueYuanCell2">
+            <rect key="frame" x="0.0" y="0.0" width="320" height="110"/>
+            <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+            <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" tableViewCell="KGk-i7-Jjw" id="H2p-sc-9uM">
+                <rect key="frame" x="0.0" y="0.0" width="320" height="109"/>
+                <autoresizingMask key="autoresizingMask"/>
+                <subviews>
+                    <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="IMG_0351.jpg" translatesAutoresizingMaskIntoConstraints="NO" id="VEb-5Y-LOg">
+                        <rect key="frame" x="8" y="13" width="83" height="83"/>
+                        <constraints>
+                            <constraint firstAttribute="width" secondItem="VEb-5Y-LOg" secondAttribute="height" multiplier="1:1" id="AVA-KR-XUx"/>
+                        </constraints>
+                    </imageView>
+                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="孙少伟" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="pPM-2y-1d5">
+                        <rect key="frame" x="127" y="18" width="51" height="18"/>
+                        <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                        <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
+                        <nil key="highlightedColor"/>
+                    </label>
+                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="C1" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="pdb-FS-UpH">
+                        <rect key="frame" x="127" y="41" width="19" height="20"/>
+                        <fontDescription key="fontDescription" type="system" pointSize="16"/>
+                        <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
+                        <nil key="highlightedColor"/>
+                    </label>
+                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="C2" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="iqz-r0-41S">
+                        <rect key="frame" x="127" y="71" width="21" height="20"/>
+                        <fontDescription key="fontDescription" type="system" pointSize="16"/>
+                        <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
+                        <nil key="highlightedColor"/>
+                    </label>
+                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="￥6000" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Sv0-l7-Wb9">
+                        <rect key="frame" x="179" y="41" width="56" height="20"/>
+                        <fontDescription key="fontDescription" type="system" pointSize="16"/>
+                        <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
+                        <nil key="highlightedColor"/>
+                    </label>
+                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="￥6000" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="98y-tz-w9G">
+                        <rect key="frame" x="179" y="71" width="56" height="20"/>
+                        <fontDescription key="fontDescription" type="system" pointSize="16"/>
+                        <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
+                        <nil key="highlightedColor"/>
+                    </label>
+                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="12:30" textAlignment="natural" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="5PN-H7-Nn8">
+                        <rect key="frame" x="271" y="81" width="41" height="20"/>
+                        <fontDescription key="fontDescription" type="system" pointSize="16"/>
+                        <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
+                        <nil key="highlightedColor"/>
+                    </label>
+                </subviews>
+                <constraints>
+                    <constraint firstAttribute="trailingMargin" secondItem="5PN-H7-Nn8" secondAttribute="trailing" id="2ZM-8D-6rf"/>
+                    <constraint firstAttribute="bottomMargin" secondItem="VEb-5Y-LOg" secondAttribute="bottom" constant="5" id="51a-Al-dTg"/>
+                    <constraint firstItem="pPM-2y-1d5" firstAttribute="leading" secondItem="iqz-r0-41S" secondAttribute="leading" id="7XF-07-1RQ"/>
+                    <constraint firstItem="Sv0-l7-Wb9" firstAttribute="height" secondItem="pdb-FS-UpH" secondAttribute="height" id="9gg-Mk-8iy"/>
+                    <constraint firstAttribute="bottomMargin" secondItem="iqz-r0-41S" secondAttribute="bottom" constant="10" id="Dy5-g4-FdP"/>
+                    <constraint firstItem="98y-tz-w9G" firstAttribute="top" secondItem="iqz-r0-41S" secondAttribute="top" id="IU7-Qe-PpD"/>
+                    <constraint firstItem="pPM-2y-1d5" firstAttribute="leading" secondItem="VEb-5Y-LOg" secondAttribute="trailing" constant="36" id="Jjt-TZ-Xrg"/>
+                    <constraint firstItem="VEb-5Y-LOg" firstAttribute="leading" secondItem="H2p-sc-9uM" secondAttribute="leadingMargin" id="KTp-WT-mwb"/>
+                    <constraint firstItem="VEb-5Y-LOg" firstAttribute="top" secondItem="H2p-sc-9uM" secondAttribute="topMargin" constant="-27" id="Kyr-Ie-3pP"/>
+                    <constraint firstItem="Sv0-l7-Wb9" firstAttribute="top" secondItem="pdb-FS-UpH" secondAttribute="top" id="MPr-X1-L2N"/>
+                    <constraint firstItem="Sv0-l7-Wb9" firstAttribute="leading" secondItem="pdb-FS-UpH" secondAttribute="trailing" constant="33" id="PD7-Qm-oDy"/>
+                    <constraint firstItem="pPM-2y-1d5" firstAttribute="leading" secondItem="pdb-FS-UpH" secondAttribute="leading" id="QEr-J4-UFk"/>
+                    <constraint firstItem="pdb-FS-UpH" firstAttribute="top" secondItem="pPM-2y-1d5" secondAttribute="bottom" constant="5" id="SO3-dg-6b1"/>
+                    <constraint firstItem="VEb-5Y-LOg" firstAttribute="top" secondItem="H2p-sc-9uM" secondAttribute="topMargin" constant="5" id="bhm-Ms-bQs"/>
+                    <constraint firstItem="pPM-2y-1d5" firstAttribute="top" secondItem="H2p-sc-9uM" secondAttribute="topMargin" constant="10" id="cy0-gc-00w"/>
+                    <constraint firstAttribute="bottom" secondItem="VEb-5Y-LOg" secondAttribute="bottom" id="eGc-yX-YPW"/>
+                    <constraint firstItem="98y-tz-w9G" firstAttribute="top" secondItem="Sv0-l7-Wb9" secondAttribute="bottom" constant="10" id="itG-45-KbA"/>
+                    <constraint firstItem="5PN-H7-Nn8" firstAttribute="bottom" secondItem="H2p-sc-9uM" secondAttribute="bottomMargin" id="jMA-0T-NIN"/>
+                    <constraint firstItem="Sv0-l7-Wb9" firstAttribute="leading" secondItem="98y-tz-w9G" secondAttribute="leading" id="ndp-HW-pWj"/>
+                    <constraint firstItem="98y-tz-w9G" firstAttribute="height" secondItem="iqz-r0-41S" secondAttribute="height" id="qsw-nK-tvp"/>
+                    <constraint firstItem="iqz-r0-41S" firstAttribute="bottom" secondItem="VEb-5Y-LOg" secondAttribute="bottom" id="uHS-Df-dzu"/>
+                </constraints>
+                <variation key="default">
+                    <mask key="constraints">
+                        <exclude reference="Kyr-Ie-3pP"/>
+                        <exclude reference="eGc-yX-YPW"/>
+                        <exclude reference="uHS-Df-dzu"/>
+                    </mask>
+                </variation>
+            </tableViewCellContentView>
+            <connections>
+                <outlet property="c1PriceLabel" destination="Sv0-l7-Wb9" id="sLM-5F-TGU"/>
+                <outlet property="c2PriceLabel" destination="98y-tz-w9G" id="fLF-xO-qD7"/>
+                <outlet property="headVew" destination="VEb-5Y-LOg" id="sKX-rX-lgH"/>
+                <outlet property="sNameLabel" destination="pPM-2y-1d5" id="INc-KN-Tgo"/>
+                <outlet property="seeTimeLable" destination="5PN-H7-Nn8" id="hVw-Ff-DTR"/>
+            </connections>
+        </tableViewCell>
+    </objects>
+    <resources>
+        <image name="IMG_0351.jpg" width="960" height="1280"/>
+    </resources>
+</document>

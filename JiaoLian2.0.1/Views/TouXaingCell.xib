@@ -1,0 +1,66 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="9059" systemVersion="14F1021" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES">
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="9049"/>
+        <capability name="Aspect ratio constraints" minToolsVersion="5.1"/>
+        <capability name="Constraints to layout margins" minToolsVersion="6.0"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner"/>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <tableViewCell contentMode="scaleToFill" selectionStyle="default" indentationWidth="10" reuseIdentifier="TouXaingCell" rowHeight="83" id="KGk-i7-Jjw" customClass="TouXaingCell">
+            <rect key="frame" x="0.0" y="0.0" width="320" height="100"/>
+            <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+            <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" tableViewCell="KGk-i7-Jjw" id="H2p-sc-9uM">
+                <rect key="frame" x="0.0" y="0.0" width="320" height="99"/>
+                <autoresizingMask key="autoresizingMask"/>
+                <subviews>
+                    <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="aQm-Bs-oab">
+                        <rect key="frame" x="199" y="8" width="83" height="83"/>
+                        <constraints>
+                            <constraint firstAttribute="width" secondItem="aQm-Bs-oab" secondAttribute="height" multiplier="1:1" id="KBC-A7-CqD"/>
+                        </constraints>
+                    </imageView>
+                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="头像" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="kfQ-Cn-ctR">
+                        <rect key="frame" x="28" y="39" width="34" height="21"/>
+                        <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                        <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
+                        <nil key="highlightedColor"/>
+                    </label>
+                    <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="iconfont-youjiantou-副本-2.png" translatesAutoresizingMaskIntoConstraints="NO" id="OB5-3y-ZqX">
+                        <rect key="frame" x="292" y="42" width="10" height="18"/>
+                        <constraints>
+                            <constraint firstAttribute="height" constant="18" id="ATu-B2-Ekd"/>
+                            <constraint firstAttribute="width" constant="10" id="Wc1-SO-pRf"/>
+                        </constraints>
+                    </imageView>
+                </subviews>
+                <constraints>
+                    <constraint firstAttribute="trailingMargin" secondItem="aQm-Bs-oab" secondAttribute="trailing" constant="30" id="BAp-3m-HPU"/>
+                    <constraint firstItem="aQm-Bs-oab" firstAttribute="top" secondItem="H2p-sc-9uM" secondAttribute="topMargin" id="ELN-8C-eCh"/>
+                    <constraint firstAttribute="trailingMargin" secondItem="OB5-3y-ZqX" secondAttribute="trailing" constant="10" id="G4C-ft-pwZ"/>
+                    <constraint firstItem="OB5-3y-ZqX" firstAttribute="bottom" secondItem="kfQ-Cn-ctR" secondAttribute="bottom" id="QRD-YS-S6g"/>
+                    <constraint firstAttribute="bottomMargin" secondItem="aQm-Bs-oab" secondAttribute="bottom" id="biC-Vd-z3q"/>
+                    <constraint firstAttribute="trailing" secondItem="OB5-3y-ZqX" secondAttribute="trailing" id="dFg-po-g5y"/>
+                    <constraint firstItem="kfQ-Cn-ctR" firstAttribute="leading" secondItem="H2p-sc-9uM" secondAttribute="leadingMargin" constant="20" id="sKO-mt-sKe"/>
+                    <constraint firstItem="OB5-3y-ZqX" firstAttribute="trailing" secondItem="H2p-sc-9uM" secondAttribute="trailingMargin" constant="10" id="sbe-vx-CVF"/>
+                    <constraint firstItem="kfQ-Cn-ctR" firstAttribute="centerY" secondItem="aQm-Bs-oab" secondAttribute="centerY" id="taI-pG-5Dt"/>
+                </constraints>
+                <variation key="default">
+                    <mask key="constraints">
+                        <exclude reference="dFg-po-g5y"/>
+                        <exclude reference="sbe-vx-CVF"/>
+                    </mask>
+                </variation>
+            </tableViewCellContentView>
+            <connections>
+                <outlet property="touXiangView" destination="aQm-Bs-oab" id="VKY-pc-oPK"/>
+            </connections>
+            <point key="canvasLocation" x="467" y="250"/>
+        </tableViewCell>
+    </objects>
+    <resources>
+        <image name="iconfont-youjiantou-副本-2.png" width="7" height="13"/>
+    </resources>
+</document>

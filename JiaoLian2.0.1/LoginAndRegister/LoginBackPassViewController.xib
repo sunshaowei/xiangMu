@@ -1,0 +1,75 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="9059" systemVersion="14F1021" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES">
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="9049"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner" customClass="LoginBackPassViewController">
+            <connections>
+                <outlet property="successButton" destination="ESG-Kh-LGr" id="XC1-yF-ael"/>
+                <outlet property="view" destination="i5M-Pr-FkT" id="sfx-zR-JGt"/>
+                <outlet property="xinPassText" destination="nhW-yY-eU1" id="B62-X1-EUp"/>
+            </connections>
+        </placeholder>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <view clearsContextBeforeDrawing="NO" contentMode="scaleToFill" id="i5M-Pr-FkT">
+            <rect key="frame" x="0.0" y="0.0" width="600" height="600"/>
+            <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+            <subviews>
+                <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="suo.png" translatesAutoresizingMaskIntoConstraints="NO" id="xC2-ws-tRc">
+                    <rect key="frame" x="50" y="184" width="35" height="35"/>
+                    <constraints>
+                        <constraint firstAttribute="width" constant="35" id="eSe-9j-VZa"/>
+                        <constraint firstAttribute="height" constant="35" id="xc2-Ua-mIS"/>
+                    </constraints>
+                </imageView>
+                <textField opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" placeholder="请输入您的新密码" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="nhW-yY-eU1">
+                    <rect key="frame" x="105" y="187" width="465" height="30"/>
+                    <constraints>
+                        <constraint firstAttribute="height" constant="30" id="O4G-SH-bsv"/>
+                    </constraints>
+                    <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                    <textInputTraits key="textInputTraits"/>
+                </textField>
+                <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="2pn-W1-jPT" userLabel="lineView">
+                    <rect key="frame" x="50" y="232" width="520" height="1"/>
+                    <color key="backgroundColor" white="0.0" alpha="1" colorSpace="calibratedWhite"/>
+                    <constraints>
+                        <constraint firstAttribute="height" constant="1" id="sda-TA-BOc"/>
+                    </constraints>
+                </view>
+                <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="ESG-Kh-LGr">
+                    <rect key="frame" x="30" y="333" width="540" height="50"/>
+                    <color key="backgroundColor" red="0.20784315466880798" green="0.77647066116333008" blue="0.67843139171600342" alpha="1" colorSpace="deviceRGB"/>
+                    <constraints>
+                        <constraint firstAttribute="height" constant="50" id="gcM-I9-bcv"/>
+                    </constraints>
+                    <state key="normal" title="完成">
+                        <color key="titleColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                    </state>
+                    <connections>
+                        <action selector="successButton:" destination="-1" eventType="touchUpInside" id="Dgn-V8-hEd"/>
+                    </connections>
+                </button>
+            </subviews>
+            <color key="backgroundColor" red="0.93333339691162109" green="0.93333339691162109" blue="0.93333339691162109" alpha="1" colorSpace="deviceRGB"/>
+            <constraints>
+                <constraint firstAttribute="trailing" secondItem="2pn-W1-jPT" secondAttribute="trailing" constant="30" id="CDe-DV-8VS"/>
+                <constraint firstAttribute="bottom" secondItem="ESG-Kh-LGr" secondAttribute="bottom" constant="217" id="EMh-hM-CR1"/>
+                <constraint firstAttribute="trailing" secondItem="nhW-yY-eU1" secondAttribute="trailing" constant="30" id="EtG-sO-Msp"/>
+                <constraint firstItem="xC2-ws-tRc" firstAttribute="top" secondItem="i5M-Pr-FkT" secondAttribute="top" constant="184" id="FjD-dm-ybm"/>
+                <constraint firstItem="ESG-Kh-LGr" firstAttribute="centerX" secondItem="i5M-Pr-FkT" secondAttribute="centerX" id="G6f-9a-oTk"/>
+                <constraint firstItem="xC2-ws-tRc" firstAttribute="leading" secondItem="i5M-Pr-FkT" secondAttribute="leading" constant="50" id="GX1-Bi-SFI"/>
+                <constraint firstItem="2pn-W1-jPT" firstAttribute="leading" secondItem="i5M-Pr-FkT" secondAttribute="leading" constant="50" id="IeD-yI-r2V"/>
+                <constraint firstItem="nhW-yY-eU1" firstAttribute="centerY" secondItem="xC2-ws-tRc" secondAttribute="centerY" id="OkU-IG-XWt"/>
+                <constraint firstItem="ESG-Kh-LGr" firstAttribute="trailing" secondItem="2pn-W1-jPT" secondAttribute="trailing" id="QHH-mL-3bu"/>
+                <constraint firstItem="nhW-yY-eU1" firstAttribute="leading" secondItem="xC2-ws-tRc" secondAttribute="trailing" constant="20" id="ZId-sw-VCh"/>
+                <constraint firstItem="2pn-W1-jPT" firstAttribute="top" secondItem="nhW-yY-eU1" secondAttribute="bottom" constant="15" id="htf-qU-65Y"/>
+            </constraints>
+        </view>
+    </objects>
+    <resources>
+        <image name="suo.png" width="42" height="42"/>
+    </resources>
+</document>

@@ -1,0 +1,76 @@
+//
+//  JiaoLian.pch
+//  JiaoLian2.0
+//
+//  Created by 孙少伟 on 15/11/12.
+//  Copyright © 2015年 sunshaowei. All rights reserved.
+//
+
+#ifndef JiaoLian_pch
+#define JiaoLian_pch
+
+// Include any system framework and library headers here that should be included in all compilation units.
+// You will also need to set the Prefix Header build setting of one or more of your targets to reference this file.
+
+#endif /* JiaoLian_pch */
+//获取屏幕 宽度、高度
+#define SCREEN_FRAME [UIScreen mainScreen].bounds
+#define SCREEN_WIDTH ([UIScreen mainScreen].bounds.size.width)
+#define SCREEN_HEIGHT ([UIScreen mainScreen].bounds.size.height)
+
+
+#define OffWidth [UIScreen mainScreen].bounds.size.width/375
+#define OffHeight [UIScreen mainScreen].bounds.size.height/667
+
+#define FIRST_RUN @"firstRun"//第一次启动
+#define LOING_SATAE @"loginState"//登陆状态
+#define SHENGHE_SATAE @"shengHeState"//审核状态
+#define USER_ID @"id"//id
+#define TOKEN @"token"//token
+#define telephone @"telephone"//手机号
+
+
+
+#define SERVER    @"qqxueche.cn-hangzhou.aliapp.com"   //112.126.78.75:8080  //192.168.55.100:8080 //192.168.55.111:8080 //qqxueche.cn-hangzhou.aliapp.com
+
+
+#define GetVerification(field, action) [NSString stringWithFormat:@"http://%@//rest/native/coach/login", SERVER]
+//注册接口
+#define  REGESTE_URL [NSString stringWithFormat:@"http://%@/rest/native/coach/register", SERVER]
+//登陆接口
+#define  LOING_URL [NSString stringWithFormat:@"http://%@/rest/native/coach/login", SERVER]
+//获得教练申核状态
+#define SHENGHE_STATE_URL [NSString stringWithFormat:@"http://%@/rest/native/coach/ol/selectCoachSta",SERVER]
+//个人中心信息
+#define  OWNERINFO_URL [NSString stringWithFormat:@"http://%@/rest/native/coach/ol/findOwnerInfo",SERVER]
+//谁看过我
+#define WHOSEEME_URL [NSString stringWithFormat:@"http://%@/rest/native/coach/ol/findWhoSeeMe",SERVER]
+//修改密码接口
+#define  UP_PASSWORD_URL [NSString stringWithFormat:@"http://%@/rest/native/coach/ol/upPassword",SERVER]
+//找回密码
+#define BACK_PASS_URL [NSString stringWithFormat:@"http://%@/rest/native/coach/upWrod",SERVER]
+//意见反馈
+#define YIJIAN_FANKUI_URL [NSString stringWithFormat:@"http://%@/rest/native/coach/ol/inrFreed",SERVER]
+//我的评价
+#define MY_COMMENTS_URL [NSString stringWithFormat:@"http://%@/rest/native/coach/ol/findmyEvalutes",SERVER]
+//系统消息和账户消息
+#define SYSTEM_MESSAGE_URL [NSString stringWithFormat:@"http://%@/rest/native/coach/ol/findMysgs",SERVER]
+//学员列表
+#define  STUDENT_LIST_URL [NSString stringWithFormat:@"http://%@/rest/native/coach/ol/myStu",SERVER]
+//修改ＣＣ报价
+#define  XIUGAI_CCPRICE_URL [NSString stringWithFormat:@"http://%@/rest/native/coach/ol/findcloseOffer",SERVER]
+//提交申核信息
+#define  TiJiAO_SHENGHE_URL [NSString stringWithFormat:@"http://%@/rest/native/coach/ol/updateCoach",SERVER]
+//获得申核信息详情
+#define  GET_SHENGHE_URL [NSString stringWithFormat:@"http://%@/rest/native/coach/ol/findVerifys",SERVER]
+//单个删除消息
+#define  DEL_SINGMESSAGE_URL [NSString stringWithFormat:@"http://%@/rest/native/coach/ol/delCoachSys",SERVER]
+//忽略全部已读
+#define  HULEU_YIDU_URL [NSString stringWithFormat:@"http://%@/rest/native/coach/ol/updateSys",SERVER]
+//忽略单个消息状态
+#define  HULEU_SINGMESSAGE_URL [NSString stringWithFormat:@"http://%@/rest/native/coach/ol/upMySgse",SERVER]
+//换绑手机号
+#define  CHANG_PHONE_URL [NSString stringWithFormat:@"http://%@/rest/native/coach/ol/upTelephone",SERVER]
+
+
+
